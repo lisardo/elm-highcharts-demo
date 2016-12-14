@@ -4,7 +4,6 @@ window.Highcharts = require('highcharts/highcharts');
 
 require('./index.html');
 
-var Elm = require('./Main.elm'),
-    mountNode = document.getElementById('main');
+var Elm = require('./Main.elm');
 
-window.hcDemoApp = Elm.Main.embed(mountNode);
+window.hcDemoApp = Elm.Main.fullscreen();
